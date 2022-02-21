@@ -48,7 +48,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 45%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -105,6 +105,99 @@
       color: white;
       filter: blur(0);
       text-shadow: none;
+    }
+  }
+}
+
+////////////////////////
+// PROJECTS
+.project {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  // margin: 5rem 10rem;
+
+  &__card {
+    background-color: rgba(72, 5, 189, 0.1);
+    padding: 5rem 5rem;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    max-width: 400px;
+    position: relative;
+    z-index: 10;
+    height: 500px;
+  }
+
+  &__title {
+    color: white;
+    font-size: 3rem;
+    font-family: nexa-bold;
+  }
+
+  &__description {
+    color: var(--purple-light);
+    font-family: nexa-regular;
+    font-size: 1.5rem;
+  }
+
+  &__img {
+    margin-left: -5rem;
+    align-self: center;
+    width: 600px;
+    height: 300px;
+    transition: all .3s;
+    filter: brightness(0.35);
+
+    &:hover {
+      position: relative;
+      z-index: 1000;
+      transform: scale(1.15);
+      border: 5px var(--yellow) solid;
+      filter: brightness(0.9);
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__toolbox {
+    margin-top: 1rem;
+    display: flex;
+  }
+
+  &__tools {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex: 0 0 400px;
+    margin-right: 2rem;
+
+    &-item {
+      list-style: none;
+      color: white;
+      font-family: nexa-bold;
+      font-size: 1.8rem;
+
+      &:hover {
+        box-sizing: content-box;
+        color: var(--yellow);
+      }
+    }
+  }
+
+  &__icon {
+    align-self: center;
+    height: 3rem;
+    width: 3rem;
+    flex: 0 0 100px;
+    fill: white;
+
+    &:hover {
+      transform: scale(1.1);
+      fill: var(--yellow);
+      margin-left: 2px;
     }
   }
 }
