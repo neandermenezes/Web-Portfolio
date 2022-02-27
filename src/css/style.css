@@ -2,7 +2,8 @@
   --purple-light: #8154D1;
   --blue: #2D0F60;
   --blue-dark: #120267;
-  --yellow: #FFBF00; }
+  --yellow: #FFBF00;
+  --background: #130526; }
 
 * {
   margin: 0;
@@ -18,9 +19,9 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/NeanderPort_BG.jpg");
+  background-size: 100% 100%;
   font-weight: 400;
   line-height: 1.6; }
 
@@ -126,16 +127,27 @@ body {
 .project {
   align-items: center;
   align-self: center;
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10rem auto; }
+  .project-invert {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+    margin: 10rem auto; }
   .project__card {
     background-color: rgba(72, 5, 189, 0.1);
     padding: 5rem 5rem;
     backdrop-filter: blur(15px);
     border-radius: 20px;
-    max-width: 400px;
+    width: 325px;
     position: relative;
     z-index: 10;
-    height: 500px; }
+    height: 475px; }
   .project__title {
     color: white;
     font-size: 3rem;
@@ -147,10 +159,25 @@ body {
   .project__img {
     margin-left: -5rem;
     align-self: center;
-    width: 600px;
+    max-width: 100%;
     height: 300px;
     transition: all .3s;
-    filter: brightness(0.35); }
+    filter: brightness(0.35);
+    width: 600px; }
+    .project__img-invert {
+      margin-right: -5rem;
+      align-self: center;
+      max-width: 100%;
+      height: 300px;
+      transition: all .3s;
+      filter: brightness(0.35);
+      width: 600px; }
+      .project__img-invert:hover {
+        position: relative;
+        z-index: 1000;
+        transform: scale(1.15);
+        border: 5px var(--yellow) solid;
+        filter: brightness(0.9); }
     .project__img:hover {
       position: relative;
       z-index: 1000;
@@ -188,6 +215,45 @@ body {
       fill: var(--yellow);
       margin-left: 2px; }
 
+.tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .tools__textbox {
+    margin-top: 10rem;
+    margin-bottom: 13rem; }
+  .tools__header {
+    color: white;
+    font-family: nexa-regular;
+    font-size: 4rem;
+    text-align: center; }
+  .tools__sub {
+    color: white;
+    font-family: nexa-regular;
+    font-size: 3rem; }
+  .tools__type {
+    color: white;
+    font-family: nexa-regular;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 5rem; }
+  .tools__front {
+    align-self: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+  .tools__icon {
+    align-self: center;
+    height: 150px;
+    width: 100px;
+    fill: white; }
+  .tools__description {
+    font-family: nexa-regular;
+    font-size: 1.4rem;
+    text-align: center; }
+
 .presentation-section {
   height: 100vh;
   width: 100%; }
@@ -196,3 +262,32 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 25rem; }
+
+.tools-section {
+  background-color: var(--background);
+  min-height: 1000px;
+  width: 100%; }
+
+.cardbox {
+  margin-left: -5rem;
+  align-self: center;
+  display: flex;
+  width: 75%;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.icon-container {
+  align-self: center;
+  align-items: center;
+  background-color: var(--blue);
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  width: 150px;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+  color: white; }
+  .icon-container:hover {
+    color: var(--yellow); }
