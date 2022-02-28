@@ -1,9 +1,9 @@
 import React from 'react'
-import FrontToolsCard from './FrontTools'
+import FrontToolsCard from './FrontToolsCard'
 
 export default function Tools() {
   return (
-    <div className='tools-section'>
+    <div id='tools' className='tools-section'>
       <div className='tools'>
       <div className='tools__textbox'>
         <h4 className='tools__header'>Bora programar</h4>

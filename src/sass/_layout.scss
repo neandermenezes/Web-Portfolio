@@ -1,3 +1,9 @@
+.background-helper {
+  background-repeat: no-repeat;
+  background-image: url('../img/NeanderPort_BG.jpg');
+  background-size: 100% 100%;
+}
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 // PRESENTATION
 .presentation-section {
@@ -11,7 +17,8 @@
   // background-color: red;
   display: flex;
   flex-direction: column;
-  margin-bottom: 25rem;
+  // margin-bottom: 25rem;
+  margin-top: -10rem;
   width: 100%;
 }
 
@@ -52,4 +59,39 @@
     transform: translateY(-2px);
     box-shadow: 0 1rem 2rem rgba(255, 191, 0, .2);
   }
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+}
+
+.nav {
+  display: flex;
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  margin-left: 5rem;
+
+  &__link {
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 4rem;
+    text-decoration: none;
+    border-bottom: 3px solid var(--yellow);
+
+    &:hover {
+      color: var(--yellow);
+    }
+  }
+}
+
+.contact-section {
+  background-color: #121212;
+  height: 500px;
+  position: relative;
 }

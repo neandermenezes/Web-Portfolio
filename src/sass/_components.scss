@@ -48,7 +48,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 38%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -117,7 +117,7 @@
   display: flex;
   justify-content: center;
   width: 80%;
-  margin: 10rem auto;
+  margin: 5rem auto;
 
   &-invert {
     flex-direction: row-reverse;
@@ -137,7 +137,7 @@
     width: 325px;
     position: relative;
     z-index: 10;
-    height: 475px;
+    height: 425px;
   }
 
   &__title {
@@ -156,7 +156,7 @@
     margin-left: -5rem;
     align-self: center;
     // max-width: 100%;
-    height: 350px;
+    height: 275px;
     transition: all .3s;
     filter: brightness(0.35);
     max-width: 60rem;
@@ -166,7 +166,7 @@
       margin-right: -5rem;
       align-self: center;
       // max-width: 100%;
-      height: 350px;
+      height: 275px;
       transition: all .3s;
       filter: brightness(0.35);
       max-width: 60rem;
@@ -204,7 +204,7 @@
     margin-top: 1rem;
     display: flex;
     justify-content: space-around;
-    flex: 0 0 400px;
+    flex: 0 0 300px;
     margin-right: 2rem;
 
     &-item {
@@ -282,12 +282,63 @@
     align-self: center;
     height: 150px;
     width: 100px;
-    fill: white;
+    fill: var(--yellow);
   }
 
   &__description {
     font-family: nexa-regular;
     font-size: 1.4rem;
     text-align: center;
+  }
+}
+
+/////////////////////////////////////////////////
+// CONTACT 
+.footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    margin-top: 7rem;
+    width: 400px;
+    justify-content: space-between;
+  }
+
+  &__item {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  &__header {
+    color: white;
+    font-family: nexa-bold;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 5rem;
+  }
+
+  &__icon {
+    fill: var(--yellow);
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: all .3s;
+    height: 125px;
+    width: 125px;
+  }
+
+  &__rights {
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
   }
 }

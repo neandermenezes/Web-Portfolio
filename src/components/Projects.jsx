@@ -4,7 +4,7 @@ import sprite from "../img/sprite.svg";
 
 export default function Projects() {
   return (
-    <div className="projects-section">
+    <div id="projects" className="projects-section">
       {ProjectsData.map(({ title, description, image, tools, repository }, index) => (
         <div key={title} data-aos={(index + 1) % 2 === 0 ? "fade-left" : "fade-right"} className={(index + 1) % 2 === 0 ? "project-invert" : "project"}>
           <div className="project__card">

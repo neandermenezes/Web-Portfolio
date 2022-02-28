@@ -1,12 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Neander from "../img/neandsemfundo.png";
-
+import HeaderNav from "./HeaderNav";
 
 export default function Presentation() {
 
 
   return (
     <section className="presentation-section">
+      <HeaderNav />
       <div className="presentation">
         <div
           data-aos="fade-right"
