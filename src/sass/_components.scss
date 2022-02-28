@@ -22,7 +22,7 @@
     display: block;
     position: absolute;
     height: 1rem;
-    width: 749.6px;
+    width: 808px;
     margin-top: -0.5rem;
   }
 }
@@ -54,11 +54,12 @@
   width: 100%;
 
   &__picture {
-    height: 65rem;
+    height: auto;
     z-index: -1;
-    width: 30rem;
+    width: auto;
     z-index: 1;
     margin-top: 10rem;
+    border-radius: 50%;
   }
 
   &__text {

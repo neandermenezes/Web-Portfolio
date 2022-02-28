@@ -55,7 +55,7 @@ body {
     display: block;
     position: absolute;
     height: 1rem;
-    width: 749.6px;
+    width: 808px;
     margin-top: -0.5rem; }
 
 .dot::after {
@@ -82,11 +82,12 @@ body {
   transform: translate(-50%, -50%);
   width: 100%; }
   .presentation__picture {
-    height: 65rem;
+    height: auto;
     z-index: -1;
-    width: 30rem;
+    width: auto;
     z-index: 1;
-    margin-top: 10rem; }
+    margin-top: 10rem;
+    border-radius: 50%; }
   .presentation__text {
     display: flex;
     flex-direction: column; }
