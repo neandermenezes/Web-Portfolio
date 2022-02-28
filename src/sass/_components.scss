@@ -116,16 +116,16 @@
   align-self: center;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 80%;
   margin: 10rem auto;
 
   &-invert {
+    flex-direction: row-reverse;
     align-items: center;
     align-self: center;
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     margin: 10rem auto;
   }
 
@@ -155,20 +155,22 @@
   &__img {
     margin-left: -5rem;
     align-self: center;
-    max-width: 100%;
-    height: 300px;
+    // max-width: 100%;
+    height: 350px;
     transition: all .3s;
     filter: brightness(0.35);
-    width: 600px;
+    max-width: 60rem;
+    border-radius: 5px;
 
     &-invert {
       margin-right: -5rem;
       align-self: center;
-      max-width: 100%;
-      height: 300px;
+      // max-width: 100%;
+      height: 350px;
       transition: all .3s;
       filter: brightness(0.35);
-      width: 600px;
+      max-width: 60rem;
+      border-radius: 5px;
 
       &:hover {
         position: relative;
