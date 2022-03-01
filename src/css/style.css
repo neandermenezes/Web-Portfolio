@@ -317,6 +317,10 @@ body {
   .tools__textbox {
     margin-top: 10rem;
     margin-bottom: 13rem; }
+    @media screen and (max-width: 600px) {
+      .tools__textbox {
+        margin-top: 4rem;
+        margin-bottom: 4rem; } }
   .tools__header {
     color: white;
     font-family: nexa-regular;
@@ -394,6 +398,11 @@ body {
     position: absolute;
     left: 50px;
     bottom: 20px; }
+    @media screen and (max-width: 600px) {
+      .footer__rights {
+        transform: translate(-50%, -50%);
+        left: 50%;
+        bottom: 0; } }
 
 .background-helper {
   background-repeat: no-repeat;
@@ -438,10 +447,14 @@ body {
   margin-bottom: 2rem;
   color: white;
   transition: all .3s; }
-  .icon-container:hover {
-    color: var(--yellow);
-    transform: translateY(-2px);
-    box-shadow: 0 1rem 2rem rgba(255, 191, 0, 0.2); }
+  @media screen and (min-width: 801px) {
+    .icon-container:hover {
+      color: var(--yellow);
+      transform: translateY(-2px);
+      box-shadow: 0 1rem 2rem rgba(255, 191, 0, 0.2); } }
+  @media screen and (max-width: 600px) {
+    .icon-container {
+      margin-left: 5rem; } }
 
 .header {
   align-items: center;
