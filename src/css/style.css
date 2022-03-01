@@ -131,7 +131,11 @@ body {
     object-fit: cover; }
     @media screen and (max-width: 800px) {
       .presentation__picture {
-        display: none; } }
+        position: absolute;
+        z-index: -1;
+        filter: brightness(0.5);
+        left: 30%;
+        bottom: -20%; } }
   .presentation__text {
     display: flex;
     flex-direction: column;
@@ -190,7 +194,8 @@ body {
   margin: 5rem auto; }
   @media screen and (max-width: 800px) {
     .project {
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-top: 0; } }
   .project-invert {
     flex-direction: row-reverse;
     align-items: center;
