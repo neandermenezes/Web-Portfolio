@@ -9,7 +9,7 @@ export default function Projects() {
         ({ title, description, image, tools, repository }, index) => (
           <div
             key={title}
-            /* data-aos={(index + 1) % 2 === 0 ? "fade-right" : "fade-left"} */ className={
+            data-aos={(index + 1) % 2 === 0 ? "fade-right" : "fade-left"} className={
               (index + 1) % 2 === 0 ? "project-invert" : "project"
             }
           >
