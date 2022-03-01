@@ -27,8 +27,8 @@
 // TOOLS
 .tools-section {
   background-color: var(--background);
-  min-height: 1000px;
   width: 100%;
+  padding: 2rem 0;
 }
 
 .cardbox {
@@ -38,6 +38,12 @@
   width: 75%;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media screen and (max-width: 800px){
+    margin-left: -3rem;
+    margin-top: -3rem;
+  }
+
 }
 
 .icon-container {
@@ -47,9 +53,9 @@
   border-radius: 10%;
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 20rem;
   justify-content: center;
-  width: 150px;
+  width: 15rem;
   margin-left: 3rem;
   margin-bottom: 2rem;
   color: white;
@@ -63,8 +69,11 @@
     }
   }
 
-  @media screen and (max-width: 600px){
-    margin-left: 5rem;
+  @media screen and (max-width: 800px){
+    align-self: center;
+    margin-left: 2rem;
+    height: 10rem;
+    width: 7.5rem;
   }
 }
 
@@ -116,6 +125,6 @@
 
 .contact-section {
   background-color: #121212;
-  height: 500px;
   position: relative;
+  padding-bottom: 5rem;
 }

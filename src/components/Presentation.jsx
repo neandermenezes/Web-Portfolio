@@ -1,5 +1,5 @@
 import React from "react";
-import Neander from "../img/neandsemfundo.png";
+import Neander from "../img/neander.png";
 import HeaderNav from "./HeaderNav";
 
 export default function Presentation() {

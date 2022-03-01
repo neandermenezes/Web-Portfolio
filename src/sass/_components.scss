@@ -16,8 +16,8 @@
   line-height: 0.9;
 
   @media screen and (max-width: 800px) {
-    font-size: 8rem;
-    border-bottom: 5px solid var(--yellow);
+    font-size: 5rem;
+    // border-bottom: 5px solid var(--yellow);
   }
 
   &::after {
@@ -30,7 +30,7 @@
     margin-top: -0.5rem;
 
     @media screen and (max-width: 800px) {
-      display: none;
+      width: 25.5rem;
     }
   }
 }
@@ -43,6 +43,10 @@
   width: 1rem;
   margin-top: 2.2rem;
   margin-left: 5px;
+
+  @media screen and (max-width: 800px){
+    display: none;
+  }
 }
 
 .container {
@@ -63,6 +67,7 @@
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
+    margin-left: -2rem;
   }
 
   &__picture {
@@ -70,8 +75,11 @@
     z-index: -1;
     width: 30rem;
     z-index: 1;
-    margin-top: 10rem;
+    // margin-top: 10rem;
     border-radius: 50%;
+    filter: brightness(0.8);
+    filter: drop-shadow(2px 2px 5px var(--yellow));
+    object-fit: cover;
 
     @media screen and (max-width: 800px) {
       display: none;
@@ -93,7 +101,7 @@
     animation: moveInRight 1s;
 
     @media screen and (max-width: 800px) {
-      margin-top: 2rem;
+      margin-top: -4rem;
       margin-left: 6rem;
     }
   }
@@ -113,6 +121,10 @@
     font-family: nexa-bold;
     font-size: 2rem;
     text-transform: uppercase;
+
+    @media screen and (max-width: 800px){
+      font-size: 2rem;
+    }
   }
 
   &__skills {
@@ -155,6 +167,7 @@
   justify-content: center;
   width: 80%;
   margin: 5rem auto;
+  // animation: moveInLeft 1s;
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
@@ -168,6 +181,7 @@
     justify-content: center;
     width: 80%;
     margin: 10rem auto;
+    // animation: moveInRight 1s;
 
     @media screen and (max-width: 800px) {
       flex-direction: column;
@@ -183,6 +197,24 @@
     position: relative;
     z-index: 10;
     height: 425px;
+
+    @media screen and (max-width: 950px) {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      width: 300px;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: rgba(72, 5, 189, 0.1);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: var(--purple-light);
+      }
+    }
 
     @media screen and (max-width: 800px) {
       background-color: rgba(72, 5, 189, 0.2);
@@ -356,7 +388,7 @@
     margin-top: 10rem;
     margin-bottom: 13rem;
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 800px){
       margin-top: 4rem;
       margin-bottom: 4rem;
     }
@@ -367,6 +399,11 @@
     font-family: nexa-regular;
     font-size: 4rem;
     text-align: center;
+
+    @media screen and (max-width: 800px){
+      margin-top: -2rem;
+      font-size: 3rem;
+    }
   }
 
   &__sub {
@@ -376,6 +413,7 @@
 
     @media screen and (max-width: 800px) {
       text-align: center;
+      font-size: 2rem;
     }
   }
 
@@ -385,6 +423,10 @@
     font-size: 3.5rem;
     text-align: center;
     margin-bottom: 5rem;
+
+    @media screen and (max-width: 800px){
+      font-size: 2.5rem;
+    }
   }
 
   &__front {
@@ -397,15 +439,25 @@
 
   &__icon {
     align-self: center;
-    height: 150px;
-    width: 100px;
+    height: 15rem;
+    width: 10rem;
     fill: var(--yellow);
+
+    @media screen and (max-width: 800px) {
+      height: 7.5rem;
+      width: 5rem;
+    }
   }
 
   &__description {
     font-family: nexa-regular;
     font-size: 1.4rem;
     text-align: center;
+
+    @media screen and (max-width: 800px) {
+      text-align: center;
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -447,6 +499,11 @@
     font-size: 3rem;
     text-align: center;
     padding-top: 5rem;
+
+    @media screen and (max-width: 800px){
+      font-size: 2rem;
+      padding-top: 4rem;
+    }
   }
 
   &__icon {
@@ -454,8 +511,13 @@
     cursor: pointer;
     margin-bottom: 5px;
     transition: all 0.3s;
-    height: 125px;
-    width: 125px;
+    height: 12.5rem;
+    width: 12.5rem;
+
+    @media screen and (max-width: 800px){
+      height: 7rem;
+      width: 7rem;
+    }
   }
 
   &__rights {
