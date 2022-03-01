@@ -2,6 +2,7 @@
   background-repeat: no-repeat;
   background-image: url('../img/NeanderPort_BG.jpg');
   background-size: 100% 100%;
+  width: 100%;
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -62,24 +63,35 @@
 }
 
 .header {
-  width: 100%;
+  align-items: center;
   position: absolute;
   height: 70px;
+  top: 0;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 800px) {
+    background-color: transparent;
+  }
 }
 
 .nav {
-  display: flex;
   position: absolute;
+  display: flex;
   top: 15px;
-  right: 50px;
+  right: 10%;
   margin-left: 5rem;
 
   @media screen and (max-width: 800px) {
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 37%;
+    margin-bottom: 3rem;
+    align-self: center;
+    position: relative;
+    // transform: translate(-50%, -50%);
+    // top: 50%;
+    // left: 50%;
   }
 
   &__link {
