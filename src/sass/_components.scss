@@ -185,6 +185,7 @@
     height: 425px;
 
     @media screen and (max-width: 800px) {
+      background-color: rgba(72, 5, 189, 0.2);
       backdrop-filter: blur(0);
       width: auto;
       height: 275px;
@@ -215,7 +216,12 @@
     color: var(--purple-light);
     font-family: nexa-regular;
     font-size: 1.5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
+
+    @media screen and (max-width: 800px){
+      font-size: 1.8rem;
+      font-family: nexa-bold;
+    }
   }
 
   &__img {
