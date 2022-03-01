@@ -10,7 +10,6 @@ export default function Presentation() {
       <HeaderNav />
       <div className="presentation">
         <div
-          data-aos="fade-right"
           className="presentation__text"
         >
           <h2 className="header__secondary">Eu sou</h2>
@@ -26,7 +25,6 @@ export default function Presentation() {
           alt="developer's face"
         />
         <div
-          data-aos="fade-left"
           className="presentation__info"
         >
           <p className="presentation__description">Desenvolvedor web</p>
