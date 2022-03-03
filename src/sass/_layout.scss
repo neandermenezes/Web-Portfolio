@@ -120,5 +120,9 @@
 .contact-section {
   background-color: #121212;
   position: relative;
-  padding-bottom: 5rem;
+  padding: 7rem 0;
+
+  @media screen and (max-width: 800px) {
+    padding: 8rem 0;
+  }
 }

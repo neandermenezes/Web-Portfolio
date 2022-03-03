@@ -5,10 +5,11 @@ export default function Contact() {
   return (
     <div id="contact" className="contact-section">
       <footer className="footer">
-        <h5 className="footer__header">Contato</h5>
+        <h5 data-aos="fade-up" className="footer__header">Contato</h5>
 
-        <div className="footer__container">
+        <div data-aos="fade-up" className="footer__container">
           <a
+            data-aos="flip-right"
             className="footer__item"
             href="https://www.linkedin.com/in/neandermenezes/"
             target="_blank"
@@ -21,6 +22,7 @@ export default function Contact() {
           </a>
 
           <a 
+            data-aos="flip-right"
             className="footer__item"
             href="https://github.com/neandermenezes/"
             target="_blank"
