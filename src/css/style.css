@@ -197,10 +197,11 @@ body {
   justify-content: center;
   width: 80%;
   margin: 5rem auto; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1000px) {
     .project {
       flex-direction: column;
-      margin-top: 0; } }
+      margin-top: 0;
+      margin-bottom: 10rem; } }
   .project-invert {
     flex-direction: row-reverse;
     align-items: center;
@@ -209,9 +210,10 @@ body {
     justify-content: center;
     width: 80%;
     margin: 10rem auto; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1000px) {
       .project-invert {
-        flex-direction: column; } }
+        flex-direction: column;
+        margin-top: 0; } }
   .project__card {
     background-color: rgba(72, 5, 189, 0.2);
     padding: 5rem 5rem;
@@ -225,13 +227,20 @@ body {
       .project__card {
         overflow-y: scroll;
         overflow-x: hidden;
-        width: 400px; }
+        width: 550px;
+        margin-bottom: 2rem;
+        height: 550px;
+        padding-bottom: -5rem; }
         .project__card::-webkit-scrollbar {
           width: 5px; }
         .project__card::-webkit-scrollbar-track {
           background-color: rgba(72, 5, 189, 0.1); }
         .project__card::-webkit-scrollbar-thumb {
           background: var(--purple-light); } }
+    @media screen and (max-width: 1000px) {
+      .project__card {
+        height: auto;
+        overflow-y: hidden; } }
     @media screen and (max-width: 800px) {
       .project__card {
         background-color: rgba(72, 5, 189, 0.2);
@@ -262,9 +271,10 @@ body {
     filter: brightness(0.7);
     width: 65rem;
     border-radius: 5px; }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1000px) {
       .project__img {
-        width: 55rem; } }
+        width: 55rem;
+        margin-left: 0; } }
     @media screen and (max-width: 800px) {
       .project__img {
         margin: 5px 0;
@@ -285,9 +295,10 @@ body {
       filter: brightness(0.7);
       width: 65rem;
       border-radius: 5px; }
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 1000px) {
         .project__img-invert {
-          width: 55rem; } }
+          width: 55rem;
+          margin-right: 0; } }
       @media screen and (max-width: 800px) {
         .project__img-invert {
           margin: 5px 0;

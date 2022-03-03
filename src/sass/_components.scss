@@ -178,9 +178,10 @@
   margin: 5rem auto;
   // animation: moveInLeft 1s;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1000px) {
     flex-direction: column;
     margin-top: 0;
+    margin-bottom: 10rem;
   }
 
   &-invert {
@@ -193,8 +194,9 @@
     margin: 10rem auto;
     // animation: moveInRight 1s;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1000px) {
       flex-direction: column;
+      margin-top: 0;
     }
   }
 
@@ -211,7 +213,10 @@
     @media screen and (max-width: 1200px) {
       overflow-y: scroll;
       overflow-x: hidden;
-      width: 400px;
+      width: 550px;
+      margin-bottom: 2rem;
+      height: 550px;
+      padding-bottom: -5rem;
 
       &::-webkit-scrollbar {
         width: 5px;
@@ -225,6 +230,16 @@
         background: var(--purple-light);
       }
     }
+
+    @media screen and (max-width: 1000px) {
+      height: auto;
+      overflow-y: hidden;
+    }
+
+    // @media screen and (max-width: 1100px) {
+    //   width: auto;
+    //   height: auto;
+    // }
 
     @media screen and (max-width: 800px) {
       background-color: rgba(72, 5, 189, 0.2);
@@ -265,8 +280,9 @@
     width: 65rem;
     border-radius: 5px;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1000px) {
       width: 55rem;
+      margin-left: 0;
     }
 
     @media screen and (max-width: 800px) {
@@ -292,8 +308,9 @@
       width: 65rem;
       border-radius: 5px;
 
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 1000px) {
         width: 55rem;
+        margin-right: 0;
       }
 
       @media screen and (max-width: 800px) {
