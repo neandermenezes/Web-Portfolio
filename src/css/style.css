@@ -490,7 +490,7 @@ body {
     align-items: center;
     display: flex;
     position: absolute;
-    right: 1%;
+    right: 10%;
     bottom: 3.6%;
     font-size: 1.2rem;
     color: white; }
