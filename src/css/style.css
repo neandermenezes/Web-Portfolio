@@ -490,8 +490,8 @@ body {
     align-items: center;
     display: flex;
     position: absolute;
-    right: 10%;
-    bottom: 3.6%;
+    right: 2%;
+    bottom: 4%;
     font-size: 1.2rem;
     color: white; }
     @media screen and (min-width: 800px) {
