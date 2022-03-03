@@ -41,7 +41,6 @@ export default function Projects() {
                   >
                     <svg className="project__icon">
                       <use href={sprite + "#icon-github"} />
-                      {/* <span>Clique aqui!</span> */}
                     </svg>
                   </a>
                 </ul>

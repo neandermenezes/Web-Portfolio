@@ -34,6 +34,15 @@ export default function Contact() {
         </div>
 
         <span className="footer__rights">Desenvolvido por Neander Menezes</span>
+        
+        <div className="footer__mail">
+          <svg className="footer__icon--mail">
+            <use href={ sprite + "#icon-mail"} />
+          </svg>
+
+          <span className="email">neander2801@gmail.com</span>
+        </div>
+
       </footer>
     </div>
   );

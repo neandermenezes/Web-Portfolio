@@ -26,7 +26,7 @@
     display: block;
     position: absolute;
     height: 1rem;
-    width: 749.6px;
+    width: 759.6px;
     margin-top: -0.5rem;
 
     @media screen and (max-width: 800px) {
@@ -77,22 +77,20 @@
     z-index: -1;
     width: 30rem;
     z-index: 1;
-    // margin-top: 10rem;
+    margin-left: 1rem;
     border-radius: 50%;
-    filter: brightness(0.8);
-    filter: drop-shadow(2px 2px 5px var(--yellow));
-    object-fit: cover;
+    object-fit: contain;
 
     @media screen and (max-width: 800px) {
       margin-left: -3rem;
       position: absolute;
       z-index: -1;
-      filter: brightness(0.5);
-      left: 20%;
+      // filter: brightness(0.5);
+      left: 30%;
       bottom: 25%;
       object-fit:fill;
-      width: 25rem;
-      height: 40rem;
+      width: auto;
+      height: 50rem;
     }
   }
 
@@ -494,16 +492,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 5rem;
 
   &__container {
     display: flex;
-    margin-top: 7rem;
+    margin-top: 5rem;
     width: 400px;
     justify-content: space-between;
 
     @media screen and (max-width: 600px){
       margin-top: 1rem;
-      flex-direction: column;
+      justify-content: space-evenly;
       align-items: center;
       gap: 15px;
     }
@@ -528,7 +527,7 @@
 
     @media screen and (max-width: 800px){
       font-size: 2rem;
-      padding-top: 4rem;
+      padding-top: 2rem;
     }
   }
 
@@ -544,19 +543,45 @@
       height: 7rem;
       width: 7rem;
     }
+
+    &--mail {
+      fill: var(--yellow);
+      height: 2rem;
+      width: 2rem;
+    }
   }
 
   &__rights {
     color: white;
     font-size: 1.2rem;
     position: absolute;
-    left: 50px;
-    bottom: 20px;
+    transform: translate(-50%, -50%);
+    left: 30%;
+    bottom: 0;
 
-    @media screen and (max-width: 600px){
-      transform: translate(-50%, -50%);
-      left: 50%;
-      bottom: 0;
+    // @media screen and (max-width: 600px){
+    //   transform: translate(-50%, -50%);
+    //   left: 50%;
+    //   bottom: 0;
+    // }
+  }
+
+  &__mail {
+    align-self: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    right: 7%;
+    bottom: 3.6%;
+    font-size: 1.2rem;
+    color: white;
+
+    @media screen and (min-width: 800px){
+      right: 25%;
     }
   }
+}
+
+.email {
+  margin-left: 2px;
 }
